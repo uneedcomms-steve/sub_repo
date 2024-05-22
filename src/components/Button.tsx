@@ -1,10 +1,16 @@
 import React from "react";
 
-const Button = ({ text, onClick, ...props }: any) => {
+type ButtonProps = {
+  text: string;
+  onClick: () => void;
+  style?: React.CSSProperties;
+};
+
+const Button = ({ text, onClick, ...props }: ButtonProps) => {
   return (
     <button
       style={{
-        border: "1px solid blue",
+        border: "1px solid red",
         padding: "15px 20px",
         borderRadius: 8,
         ...props.style
