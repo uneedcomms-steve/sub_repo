@@ -12,6 +12,7 @@ const Button = ({ text, onClick, ...props }: ButtonProps) => {
       style={{
         border: "1px solid blue",
         padding: "15px 20px",
+        margin: 10,
         borderRadius: 8,
         ...props.style
       }}
